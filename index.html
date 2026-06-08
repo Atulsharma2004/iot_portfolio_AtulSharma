@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Atul Sharma — Embedded Systems & IoT Firmware Engineer. Production firmware for smart meters, GPS trackers, payment terminals, ESP32-P4, Qualcomm Open CPU, STM32, FreeRTOS." />
+  <meta name="keywords" content="Embedded Systems Engineer, Firmware Engineer, IoT Developer, ESP32, STM32, Qualcomm OpenCPU, FreeRTOS, Cellular IoT, MQTT, NB-IoT" />
+  <meta name="author" content="Atul Sharma" />
+  <meta property="og:title" content="Atul Sharma — Embedded Systems & IoT Firmware Engineer" />
+  <meta property="og:description" content="Building production firmware for connected devices, cellular IoT systems, smart meters, GPS trackers, and fintech payment terminals." />
+  <meta property="og:type" content="website" />
+  <title>Atul Sharma | Embedded Systems & IoT Firmware Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <canvas id="pcb-canvas" aria-hidden="true"></canvas>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-chip"></span>
+        <span>AS<span class="logo-dot">.</span></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-eyebrow">Delhi, India · Available for Embedded & IoT Roles</p>
+          <h1 class="hero-title">ATUL SHARMA</h1>
+          <h2 class="hero-subtitle">Embedded Systems &amp; IoT Firmware Engineer</h2>
+          <p class="hero-tagline">Building Production Firmware for Connected Devices, Cellular IoT Systems, Smart Meters, GPS Trackers, and Fintech Payment Terminals.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary" id="resume-btn">Download Resume</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="arch-diagram" id="arch-diagram">
+            <div class="arch-node" data-step="0"><span class="arch-icon">📡</span><span>Sensors</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node" data-step="1"><span class="arch-icon">🔲</span><span>MCU</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node" data-step="2"><span class="arch-icon">⚙️</span><span>RTOS</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node" data-step="3"><span class="arch-icon">📶</span><span>Connectivity</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node" data-step="4"><span class="arch-icon">☁️</span><span>Cloud</span></div>
+          </div>
+          <div class="protocol-bar" id="protocol-bar"></div>
+        </div>
+      </div>
+      <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2>Engineering Story</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-story reveal" id="about-story"></div>
+          <div class="timeline reveal" id="timeline"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">02 — Skills</span>
+          <h2>Technical Arsenal</h2>
+        </header>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">03 — Experience</span>
+          <h2>Professional Journey</h2>
+        </header>
+        <div class="exp-card glass reveal" id="experience-card"></div>
+        <div class="exp-achievements reveal" id="exp-achievements"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">04 — Projects</span>
+          <h2>Featured Work</h2>
+          <p class="section-desc">Production firmware, R&D, and cross-platform embedded systems — including ESP32-P4, QCC748, Qualcomm Open CPU, and custom controller integration.</p>
+        </header>
+        <div class="project-filters reveal" id="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="production">Production</button>
+          <button class="filter-btn" data-filter="research">Research</button>
+          <button class="filter-btn" data-filter="tooling">Tooling</button>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section id="github" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">05 — Open Source</span>
+          <h2>GitHub Repositories</h2>
+          <p class="section-desc">Embedded &amp; IoT firmware research published on <a href="https://github.com/Atulsharma2004" target="_blank" rel="noopener">github.com/Atulsharma2004</a></p>
+        </header>
+        <div class="github-grid" id="github-grid"></div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section section-alt">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">06 — Impact</span>
+          <h2>Key Metrics</h2>
+        </header>
+        <div class="metrics-grid" id="metrics-grid"></div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DEMOS -->
+    <section id="demos" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">07 — Engineering Demos</span>
+          <h2>Interactive Visualizations</h2>
+        </header>
+        <div class="demos-grid">
+          <div class="demo-card glass reveal">
+            <h3>RTOS Task Scheduler</h3>
+            <div class="rtos-sim" id="rtos-sim">
+              <div class="rtos-task" data-priority="high">GPS Task</div>
+              <div class="rtos-task" data-priority="med">MQTT Pub</div>
+              <div class="rtos-task" data-priority="low">Sensor Poll</div>
+              <div class="rtos-task" data-priority="med">LCD UI</div>
+              <div class="rtos-cpu" id="rtos-cpu">CPU</div>
+            </div>
+          </div>
+          <div class="demo-card glass reveal">
+            <h3>UART Frame Protocol</h3>
+            <div class="uart-demo" id="uart-demo">
+              <div class="uart-byte magic">MMT_KEY</div>
+              <div class="uart-byte">LEN</div>
+              <div class="uart-byte data">DATA</div>
+              <div class="uart-byte checksum">CHK</div>
+            </div>
+            <p class="demo-caption">MMT_KEY framing: magic · length · payload · checksum (mod 256)</p>
+          </div>
+          <div class="demo-card glass reveal">
+            <h3>Cellular IoT Architecture</h3>
+            <div class="cellular-arch">
+              <div class="cell-node">Device</div>
+              <div class="cell-flow">NB-IoT / GPRS</div>
+              <div class="cell-node">TCP/MQTTS</div>
+              <div class="cell-flow">TLS</div>
+              <div class="cell-node">Cloud</div>
+            </div>
+          </div>
+          <div class="demo-card glass reveal">
+            <h3>Telemetry Dashboard</h3>
+            <div class="telemetry-demo" id="telemetry-demo">
+              <div class="tel-row"><span>GPS Lat</span><span class="tel-val" data-key="lat">28.6139°</span></div>
+              <div class="tel-row"><span>GPS Lon</span><span class="tel-val" data-key="lon">77.2090°</span></div>
+              <div class="tel-row"><span>Battery</span><span class="tel-val" data-key="bat">87%</span></div>
+              <div class="tel-row"><span>Signal</span><span class="tel-val" data-key="rssi">-72 dBm</span></div>
+              <div class="tel-row"><span>MQTT</span><span class="tel-val connected" data-key="mqtt">Connected</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section section-alt">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">08 — Insights</span>
+          <h2>Engineering Blog</h2>
+        </header>
+        <div class="blog-grid" id="blog-grid"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & EDUCATION -->
+    <section id="credentials" class="section">
+      <div class="container credentials-grid">
+        <div class="reveal">
+          <header class="section-header">
+            <span class="section-tag">09 — Certifications</span>
+            <h2>Credentials</h2>
+          </header>
+          <div class="certs-list" id="certs-list"></div>
+        </div>
+        <div class="reveal">
+          <header class="section-header">
+            <span class="section-tag">10 — Education</span>
+            <h2>Academic Background</h2>
+          </header>
+          <div class="edu-card glass" id="edu-card"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">11 — Contact</span>
+          <h2>Let's Build Something</h2>
+          <p class="section-desc">Open to embedded systems, firmware engineering, and IoT roles.</p>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-info reveal" id="contact-info"></div>
+          <form class="contact-form glass reveal" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about the role or project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-note">Opens your email client with a pre-filled message.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Atul Sharma — Embedded Systems &amp; IoT Firmware Engineer</p>
+      <div class="footer-links">
+        <a href="https://github.com/Atulsharma2004" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/atulsharma2004/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:atul.sharma.123647@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

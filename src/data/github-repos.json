@@ -1,0 +1,29 @@
+[
+  {
+    "name": "STM32F0_Bare_Metal_Blinky_libopencm3",
+    "description": "Bare-metal firmware for NUCLEO-F072RB (STM32F072RB) using libopencm3 — custom linker scripts, Makefile builds, SysTick timing, TIM2 PWM LED fading, OpenOCD flashing, and WSL2/usbipd-win debugging without STM32CubeIDE.",
+    "language": "C",
+    "url": "https://github.com/Atulsharma2004/STM32F0_Bare_Metal_Blinky_libopencm3",
+    "updated": "2026-06-08",
+    "stars": 0,
+    "tags": ["STM32", "libopencm3", "OpenOCD", "Bare-Metal"]
+  },
+  {
+    "name": "PPPoS_Dialing_over_UART_ESP32P4",
+    "description": "PPPoS cellular dial-up networking over UART on ESP32-P4 — modem AT command handling, PPP stack integration, and host-device serial bridge for embedded connectivity research.",
+    "language": "C",
+    "url": "https://github.com/Atulsharma2004/PPPoS_Dialing_over_UART_ESP32P4",
+    "updated": "2026-06-08",
+    "stars": 0,
+    "tags": ["ESP32-P4", "PPPoS", "UART", "Cellular"]
+  },
+  {
+    "name": "usb_tethering_RNDIS_esp32p4",
+    "description": "USB RNDIS tethering implementation on ESP32-P4 — USB device networking stack, host-device communication, and embedded network bridge for IoT gateway applications.",
+    "language": "C",
+    "url": "https://github.com/Atulsharma2004/usb_tethering_RNDIS_esp32p4",
+    "updated": "2026-06-03",
+    "stars": 0,
+    "tags": ["ESP32-P4", "RNDIS", "USB", "Networking"]
+  }
+]
