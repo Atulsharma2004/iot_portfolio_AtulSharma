@@ -276,8 +276,12 @@ contactInfo.innerHTML = `
   </div>
 `;
 
-document.getElementById('resume-btn')?.setAttribute('href', profile.resumeUrl);
-document.getElementById('resume-btn')?.setAttribute('download', '');
+const resumeBtn = document.getElementById('resume-btn');
+if (resumeBtn) {
+  resumeBtn.href = profile.resumeUrl;
+  resumeBtn.setAttribute('download', profile.resumeFilename);
+  resumeBtn.setAttribute('type', 'application/pdf');
+}
 
 document.getElementById('contact-form')?.addEventListener('submit', (e) => {
   e.preventDefault();

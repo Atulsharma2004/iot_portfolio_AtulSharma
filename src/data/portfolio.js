@@ -6,7 +6,8 @@ export const profile = {
   phone: '+91 8953555297',
   linkedin: 'https://www.linkedin.com/in/atulsharma2004/',
   github: 'https://github.com/Atulsharma2004',
-  resumeUrl: './assets/Atul_Sharma_Embedded_IoT_Resume.pdf',
+  resumeUrl: '/assets/Atul_Sharma_Embedded_IoT_Resume.pdf',
+  resumeFilename: 'Atul_Sharma_Embedded_IoT_Resume.pdf',
   summary:
     'An Embedded Systems and IoT Firmware Engineer with 2+ years of industry experience building production-grade firmware for smart meters, GPS cattle tracking devices, fintech payment terminals, and cellular IoT products. Experienced in Embedded C/C++, Qualcomm Open CPU platforms, STM32, ESP32, ESP32-P4, ESP32-S3, QCC748, Realtek BLE/Wi-Fi, FreeRTOS, communication protocols, cloud connectivity, and hardware-software integration.',
 };
