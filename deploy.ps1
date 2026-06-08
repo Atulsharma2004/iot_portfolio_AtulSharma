@@ -12,7 +12,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Creating GitHub repo Atulsharma2004/iot_portfolio_AtulSharma..." -ForegroundColor Cyan
-$remoteExists = git remote get-url origin 2>$null
+$remoteExists = git remote 2>$null | Select-String -Pattern '^origin$' -Quiet
 if (-not $remoteExists) {
     gh repo create Atulsharma2004/iot_portfolio_AtulSharma --public --source=. --remote=origin --description "Embedded Systems & IoT Firmware Engineer portfolio - Atul Sharma"
     git push -u origin main
