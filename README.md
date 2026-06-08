@@ -1,6 +1,6 @@
-# Atul Sharma — Embedded Systems & IoT Portfolio
+# iot_portfolio_AtulSharma
 
-A world-class, recruiter-focused portfolio website for **Atul Sharma**, Embedded Systems & IoT Firmware Engineer.
+Embedded Systems & IoT Firmware Engineer portfolio for **Atul Sharma** — separate from the general web portfolio on [GitHub](https://github.com/Atulsharma2004).
 
 ## Features
 
@@ -16,7 +16,8 @@ A world-class, recruiter-focused portfolio website for **Atul Sharma**, Embedded
 ## Quick Start
 
 ```bash
-cd atul-sharma-portfolio
+git clone https://github.com/Atulsharma2004/iot_portfolio_AtulSharma.git
+cd iot_portfolio_AtulSharma
 npm install
 npm run dev
 ```
@@ -30,7 +31,13 @@ npm run build
 npm run preview
 ```
 
-Deploy the `dist/` folder to GitHub Pages, Netlify, or Vercel.
+### Deploy to Vercel
+
+1. Push this repo to `github.com/Atulsharma2004/iot_portfolio_AtulSharma`
+2. Import the repository at [vercel.com/new](https://vercel.com/new)
+3. Vercel auto-detects Vite — use **Build Command** `npm run build` and **Output Directory** `dist`
+
+Or deploy from CLI: `npx vercel --prod`
 
 ## Resume
 
